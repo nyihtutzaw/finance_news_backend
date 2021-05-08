@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "watchlists",
+  "info": {
+    "name": "Watchlists",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "market": {
+      "model": "market",
+      "via": "watchlists"
+    }
+  }
+}

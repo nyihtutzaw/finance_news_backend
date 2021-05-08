@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "newfeeds",
+  "info": {
+    "name": "Newfeeds",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "caption": {
+      "type": "text"
+    },
+    "imageCaption": {
+      "type": "string"
+    },
+    "imageDescription": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "shares": {
+      "type": "integer"
+    },
+    "comments": {
+      "type": "integer"
+    },
+    "up": {
+      "type": "integer"
+    },
+    "down": {
+      "type": "integer"
+    },
+    "likes": {
+      "type": "integer"
+    },
+    "author": {
+      "model": "authors",
+      "via": "newfeeds"
+    }
+  }
+}

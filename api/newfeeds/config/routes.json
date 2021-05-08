@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/newfeeds",
+      "handler": "newfeeds.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newfeeds/count",
+      "handler": "newfeeds.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/newfeeds/:id",
+      "handler": "newfeeds.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/newfeeds",
+      "handler": "newfeeds.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/newfeeds/:id",
+      "handler": "newfeeds.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/newfeeds/:id",
+      "handler": "newfeeds.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

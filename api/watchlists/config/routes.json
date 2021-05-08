@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/watchlists",
+      "handler": "watchlists.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/watchlists/count",
+      "handler": "watchlists.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/watchlists/:id",
+      "handler": "watchlists.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/watchlists",
+      "handler": "watchlists.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/watchlists/:id",
+      "handler": "watchlists.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/watchlists/:id",
+      "handler": "watchlists.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

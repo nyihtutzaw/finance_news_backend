@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "markets",
+  "info": {
+    "name": "Market"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "symbol": {
+      "type": "string"
+    },
+    "longSymbol": {
+      "type": "string"
+    },
+    "change": {
+      "type": "float"
+    },
+    "changePercentage": {
+      "type": "decimal"
+    },
+    "lastPrice": {
+      "type": "decimal"
+    },
+    "watchlists": {
+      "via": "market",
+      "collection": "watchlists"
+    }
+  }
+}
