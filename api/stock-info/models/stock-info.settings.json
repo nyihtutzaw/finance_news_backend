@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stock_infos",
+  "info": {
+    "name": "StockInfo",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "code": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "exchange": {
+      "type": "string"
+    },
+    "ipo_date": {
+      "type": "date"
+    }
+  }
+}

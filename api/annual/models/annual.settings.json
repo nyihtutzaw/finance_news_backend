@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "watchlists",
+  "collectionName": "annuals",
   "info": {
-    "name": "Watchlists",
+    "name": "annual",
     "description": ""
   },
   "options": {
@@ -12,8 +12,17 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "revenue": {
+      "type": "decimal"
+    },
+    "earning": {
+      "type": "decimal"
+    },
     "market": {
-      "via": "watchlists",
+      "via": "annuals",
       "model": "market"
     }
   }

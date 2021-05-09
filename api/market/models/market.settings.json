@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "markets",
   "info": {
-    "name": "Market"
+    "name": "Market",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -29,6 +30,29 @@
     "watchlists": {
       "via": "market",
       "collection": "watchlists"
+    },
+    "description": {
+      "type": "text"
+    },
+    "annuals": {
+      "via": "market",
+      "collection": "annual"
+    },
+    "stock_info": {
+      "model": "stock-info"
+    },
+    "profile": {
+      "model": "profile",
+      "via": "market"
+    },
+    "high": {
+      "type": "decimal"
+    },
+    "low": {
+      "type": "decimal"
+    },
+    "city": {
+      "type": "string"
     }
   }
 }

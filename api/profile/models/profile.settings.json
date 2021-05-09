@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profiles",
+  "info": {
+    "name": "Profile",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "sector": {
+      "type": "string"
+    },
+    "industry": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "ipo_date": {
+      "type": "date"
+    },
+    "ceo": {
+      "type": "string"
+    },
+    "market": {
+      "via": "profile",
+      "model": "market"
+    }
+  }
+}
